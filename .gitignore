@@ -127,7 +127,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+<<<<<<< HEAD
 portfolio/djenv
+=======
+portfolio/djvenv
+>>>>>>> b8cf367115ec7907a95a2be6b8ef8f9bf8e37b25
 
 # Spyder project settings
 .spyderproject

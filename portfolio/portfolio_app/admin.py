@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Student, Portfolio, Project, ProjectsInPortfolio
+from .models import Student, Portfolio, Project
+#ProjectsInPortfolio
 
 # Define a custom admin class for Portfolio
 class PortfolioAdmin(admin.ModelAdmin):
@@ -10,4 +11,4 @@ class PortfolioAdmin(admin.ModelAdmin):
 admin.site.register(Student)
 admin.site.register(Portfolio, PortfolioAdmin)
 admin.site.register(Project)
-admin.site.register(ProjectsInPortfolio)
+# admin.site.register(ProjectsInPortfolio)

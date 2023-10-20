@@ -2,8 +2,8 @@
 
 {% block content %}
     <h1>Student Name: {{ student.name }}</h1>
-    
     <p><strong>Email:</strong> {{ student.email }}</p>
     <p><strong>Major:</strong> {{ student.major }}</p>
     <p><strong>Portfolio: <a href="{{ student.portfolio.get_absolute_url }}">{{ student.portfolio.title }}</a></strong></p>
+    <a class="btn btn-primary" href="{% url 'update-portfolio' student.portfolio.id %}" role="button">Update Portfolio</a>
 {% endblock %}

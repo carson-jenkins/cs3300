@@ -1,8 +1,6 @@
 from django.db import models
 from django.urls import reverse
 
-# Create your models here.
-
 class Portfolio(models.Model):
     title = models.CharField(max_length=200)
     contact_email = models.CharField(max_length=200)
@@ -18,7 +16,7 @@ class Portfolio(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=200)
-    description = models.TextField()
+    description = models.TextField(blank=True)
     portfolio = models.ForeignKey(Portfolio, on_delete=models.CASCADE, default = None)
 
     def __str__(self):
